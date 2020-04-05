@@ -1,0 +1,31 @@
+.footer-list {
+    list-style: none;
+
+    &:first-child {
+        color: red;
+    }
+
+    &-link {
+        color: rgba($color-light, 0.5);
+
+        &:hover {
+            color: $color-light;
+        }
+    }
+
+    &-item {
+        &:first-child span {
+            color: $color-light;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    }
+}
+
+.footer-fluid {
+    background-color: #191919;
+}
+
+.footer-container {
+    padding-top: $gap *4;
+}
