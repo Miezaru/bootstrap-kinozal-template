@@ -6,6 +6,41 @@
   margin-bottom: $gap * 4;
 }
 
+.site-search,
+.user-login {
+  @include md {
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+
+  @include sm-xs {
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+
+  & .panel-heading {
+    @include md {
+      border-radius: 0px;
+    }
+
+    @include sm-xs {
+      border-radius: 0px;
+    }
+  }
+
+  & .panel-body {
+    @include md {
+      border-radius: 0px 0px 3px 3px;
+    }
+
+    @include sm-xs {
+      border-radius: 0px 0px 3px 3px;
+    }
+  }
+}
+
+
+
 .new-films,
 .best-week {
   .row {
@@ -27,21 +62,16 @@
   }
 
   &-descr {
-    padding: $gap /2;
-    display: block;
+    display: -webkit-box;
+    padding: 5px;
     overflow: hidden;
     -webkit-box-orient: vertical;
-
-    @include xs {
-      display: -webkit-box;
-      padding: 3px;
-      height: 30px;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      line-height: 22px;
-    }
+    height: 30px;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    line-height: 20px;
   }
+
 
   &-hover:hover,
   &-hover:hover>&-link>div>h3 {
@@ -71,13 +101,33 @@
 .news-item {
   &-heading {
     font-size: $font-size * 1.5;
+
+    @include sm {
+      font-size: $font-size * 1.3;
+    }
+
+    @include xs {
+      font-size: $font-size * 1.2;
+    }
   }
 
   &-img {
     width: 100%;
-    height: 180px;
+    height: auto;
+
+    @include lg-md {
+      height: auto;
+    }
+    @include md-sm {
+      height: auto;
+    }
+
     @include sm-xs {
-      height: 280px;
+      height: auto;
+    }
+
+    @include xs {
+      height: auto;
     }
 
     &:hover {
@@ -92,6 +142,15 @@
     &:hover {
       background-color: $color-accent;
       color: $color-light;
+    }
+    @include sm {
+      font-size: $font-size;
+      padding: $gap / 2;
+    }
+
+    @include xs {
+      font-size: $font-size;
+      padding: $gap /2;;
     }
   }
 }
