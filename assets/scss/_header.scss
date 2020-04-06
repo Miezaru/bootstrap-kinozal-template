@@ -1,5 +1,11 @@
 .header {
   margin-bottom: $gap * 4;
+  @include md {
+    margin-bottom: $gap;
+  }
+  @include sm-xs {
+    margin-bottom: $gap;
+  }
 }
 
 .header-logo {

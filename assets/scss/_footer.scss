@@ -1,8 +1,16 @@
 .footer-list {
     list-style: none;
-
-    &:first-child {
-        color: red;
+    @include md {
+        padding: $gap / 3;
+        margin-bottom: $gap * 2;;
+    }
+    @include sm {
+        padding: 0;
+        margin-bottom: $gap * 2;;
+    }
+    @include xs {
+        padding: 0;
+        margin-bottom: $gap * 2;;
     }
 
     &-link {
