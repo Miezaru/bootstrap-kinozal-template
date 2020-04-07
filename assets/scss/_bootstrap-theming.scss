@@ -69,7 +69,11 @@
 .panel {
   background-color: lighten($color-gray, 8%);
   border: none;
-  margin-bottom: $gap * 2;
+  margin-bottom: $gap * 1.933;
+
+  &-heading {
+    padding: 11px $gap;
+  }
 
   &-info {
     >.panel-heading {
@@ -99,11 +103,9 @@
   }
 }
 
-
 .thumbnail .caption {
   padding: 0;
 }
-
 .media-heading {
   display: -webkit-box;
   -webkit-line-clamp: 2;

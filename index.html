@@ -9,8 +9,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>КиноЗал</title>
   <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:100,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:100,400,700" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
   <link href="assets/css/style.css" rel="stylesheet">
   <!--[if lt IE 9]>
@@ -27,7 +27,7 @@
     <div class="header-logo row">
       <div class="container">
         <strong class="header-logo__title">КиноЗал</strong>
-        <span class="header-logo__description">Найди свое кино</span>
+        <span class="header-logo__description ">Найди свое кино</span>
       </div>
     </div>
     <div class="header-menu row">
@@ -60,56 +60,55 @@
     </div>
   </header>
 
-  <div class="container">
-    <div class="row">
-      <section class="site-search panel panel-info hidden-lg hidden-md col-sm-12 col-xs-12">
-        <div class="panel-heading">
-          <h3 class="panel-title">Поиск</h3>
-        </div>
-        <div class="panel-body">
-          <form action="search">
-            <div class="input-group input-group-lg">
-              <input class="form-control" type="search" placeholder="Поиск по сайту">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit"><span
-                    class="glyphicon glyphicon-search"></span></button>
-              </span>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <section class="user-login panel panel-info hidden-lg hidden-md col-sm-12 col-xs-12">
-        <div class="panel-heading">
-          <h3 class="panel-title">Вход</h3>
-        </div>
-        <div class="panel-body">
-          <form action="login">
-            <div class="form-group">
-              <input class="form-control input-lg" type="text" placeholder="Логин">
-            </div>
-
-            <div class="form-group">
-              <input class="form-control input-lg" type="password" placeholder="Пароль">
-            </div>
-
-            <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
-          </form>
-        </div>
-      </section>
-    </div>
-  </div>
-
   <div class="container wrapper">
     <div class="row">
       <main class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
+        <div class="container">
+          <div class="row">
+            <section class="site-search panel panel-info hidden-lg hidden-md">
+              <div class="panel-heading">
+                <h3 class="panel-title">Поиск</h3>
+              </div>
+              <div class="panel-body">
+                <form action="search">
+                  <div class="input-group input-group-lg">
+                    <input class="form-control" type="search" placeholder="Поиск по сайту">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="submit"><span
+                          class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </section>
+
+            <section class="user-login panel panel-info hidden-lg hidden-md">
+              <div class="panel-heading">
+                <h3 class="panel-title">Вход</h3>
+              </div>
+              <div class="panel-body">
+                <form action="login">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+
+                  <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
         <section class="new-films">
-          <h1 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Новые фильмы</h1>
+          <h1 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 new-films-title">Новые фильмы</h1>
           <div class="row">
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1263242.jpg" alt="Люси">
+                  <img class="new-films-img" src="assets/img/films/1263242.jpg" alt="Люси">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Люси</h3>
                   </div>
@@ -119,7 +118,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1266931.jpg" alt="Стражи галактики">
+                  <img class="new-films-img" src="assets/img/films/1266931.jpg" alt="Стражи галактики">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Стражи галактики</h3>
                   </div>
@@ -129,7 +128,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1289488.jpg" alt="Занесло">
+                  <img class="new-films-img" src="assets/img/films/1289488.jpg" alt="Занесло">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Занесло</h3>
                   </div>
@@ -139,7 +138,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1341151.jpg" alt="Из машины">
+                  <img class="new-films-img" src="assets/img/films/1341151.jpg" alt="Из машины">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Из машины</h3>
                   </div>
@@ -149,7 +148,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                  <img class="new-films-img" src="assets/img/films/1381061.jpg" alt="Выхода нет">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Выхода нет</h3>
                   </div>
@@ -159,7 +158,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1393263.jpg" alt="Человек муравей">
+                  <img class="new-films-img" src="assets/img/films/1393263.jpg" alt="Человек муравей">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Человек муравей</h3>
                   </div>
@@ -169,7 +168,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1401663.jpg" alt="Марсианин">
+                  <img class="new-films-img" src="assets/img/films/1401663.jpg" alt="Марсианин">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Марсианин</h3>
                   </div>
@@ -179,7 +178,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1415999.jpg" alt="Дочь бога">
+                  <img class="new-films-img" src="assets/img/films/1415999.jpg" alt="Дочь бога">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Дочь бога</h3>
                   </div>
@@ -189,7 +188,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1423264.jpg" alt="Месть от кутюр">
+                  <img class="new-films-img" src="assets/img/films/1423264.jpg" alt="Месть от кутюр">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Месть от кутюр</h3>
                   </div>
@@ -199,7 +198,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1441076.jpg" alt="5ять">
+                  <img class="new-films-img" src="assets/img/films/1441076.jpg" alt="5ять">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">5ять</h3>
                   </div>
@@ -209,7 +208,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1453229.jpg" alt="Люди икс: Апокалипсис">
+                  <img class="new-films-img" src="assets/img/films/1453229.jpg" alt="Люди икс: Апокалипсис">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Люди икс: Апокалипсис</h3>
                   </div>
@@ -219,7 +218,7 @@
             <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail new-films-hover">
                 <a class="new-films-link" href="#">
-                  <img src="assets/img/films/1455536.jpg" alt="Иллюзия обмана 2">
+                  <img class="new-films-img" src="assets/img/films/1455536.jpg" alt="Иллюзия обмана 2">
                   <div class="caption">
                     <h3 class="text-center new-films-descr">Иллюзия обмана 2</h3>
                   </div>
@@ -230,12 +229,12 @@
         </section>
 
         <section class="best-week">
-          <h2>Топ за неделю</h2>
+          <h2>ТОП за неделю</h2>
           <div class="row">
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1266931.jpg" alt="Стражи галактики">
+                  <img class="best-week-img" src="assets/img/films/1266931.jpg" alt="Стражи галактики">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Стражи галактики</h3>
                   </div>
@@ -245,7 +244,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1341151.jpg" alt="Из машины">
+                  <img class="best-week-img" src="assets/img/films/1341151.jpg" alt="Из машины">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Из машины</h3>
                   </div>
@@ -255,7 +254,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1393263.jpg" alt="Человек муравей">
+                  <img class="best-week-img" src="assets/img/films/1393263.jpg" alt="Человек муравей">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Человек-муравей</h3>
                   </div>
@@ -265,7 +264,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1415999.jpg" alt="Дочь бога">
+                  <img class="best-week-img" src="assets/img/films/1415999.jpg" alt="Дочь бога">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Дочь бога</h3>
                   </div>
@@ -275,7 +274,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1441076.jpg" alt="5ять">
+                  <img class="best-week-img" src="assets/img/films/1441076.jpg" alt="5ять">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">5ять</h3>
                   </div>
@@ -285,7 +284,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1455536.jpg" alt="Иллюзия обмана 2">
+                  <img class="best-week-img" src="assets/img/films/1455536.jpg" alt="Иллюзия обмана 2">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Иллюзия обмана 2</h3>
                   </div>
@@ -295,7 +294,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1453229.jpg" alt="Люди икс: Апокалипсис">
+                  <img class="best-week-img" src="assets/img/films/1453229.jpg" alt="Люди икс: Апокалипсис">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Люди икс: Апокалипсис</h3>
                   </div>
@@ -305,7 +304,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1423264.jpg" alt="Месть от кутюр">
+                  <img class="best-week-img" src="assets/img/films/1423264.jpg" alt="Месть от кутюр">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Месть от кутюр</h3>
                   </div>
@@ -315,7 +314,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1401663.jpg" alt="Марсианин">
+                  <img class="best-week-img" src="assets/img/films/1401663.jpg" alt="Марсианин">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Марсианин</h3>
                   </div>
@@ -325,7 +324,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                  <img class="best-week-img" src="assets/img/films/1381061.jpg" alt="Выхода нет">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Выхода нет</h3>
                   </div>
@@ -335,7 +334,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1289488.jpg" alt="Занесло">
+                  <img class="best-week-img" src="assets/img/films/1289488.jpg" alt="Занесло">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Занесло</h3>
                   </div>
@@ -345,7 +344,7 @@
             <article class="best-week-item col-lg-3 col-sm-4 col-xs-6">
               <div class="thumbnail best-week-hover">
                 <a class="best-week-link" href="#">
-                  <img src="assets/img/films/1263242.jpg" alt="Люси">
+                  <img class="best-week-img" src="assets/img/films/1263242.jpg" alt="Люси">
                   <div class="caption">
                     <h3 class="text-center best-week-descr">Люси</h3>
                   </div>
@@ -363,70 +362,77 @@
           <h2>Новости кино</h2>
           <div class="row">
             <div class="clearfix news-item">
-              <div class="col-lg-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a href="#">
                   <h4 class="news-item-heading">Кейт Бекинсейл представила фильм "Другой мир: Войны крови"</h4>
                 </a>
               </div>
-              <div class="col-lg-4 col-lg-push-0 col-md-4 col-md-push-0 col-sm-4 col-sm-push-0 col-xs-8 col-xs-push-2">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 news-item-imgblock">
                 <a href="#">
                   <img class="img-thumbnail news-item-img" src="assets/img/news/news-1.jpg" alt="">
                 </a>
               </div>
-              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae officiis deleniti
                   reprehenderit libero laudantium at minima veniam placeat neque aliquam accusantium
+                  nulla inventore, facilis, modi quam expedita! At, quos nihil?Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Quae officiis deleniti
+                  reprehenderit libero laudantium at minima veniam placeat neque aliquam accusantium
                   nulla inventore, facilis, modi quam expedita! At, quos nihil?</p>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="#" class="btn btn-lg btn-default pull-right news-item-btn">Подробнее</a>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 news-item-btnblock">
+                  <a href="#" class="btn btn-lg btn-default pull-right news-item-btn">Подробней</a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="clearfix news-item">
-              <div class="col-lg-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a href="#">
                   <h4 class="news-item-heading">Критики Нью-Йорка выбрали лучший фильм 2016 года</h4>
                 </a>
               </div>
-              <div class="col-lg-4 col-lg-push-0 col-md-4 col-md-push-0 col-sm-4 col-sm-push-0 col-xs-8 col-xs-push-2">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 news-item-imgblock">
                 <a href="#">
                   <img class="img-thumbnail news-item-img" src="assets/img/news/news-2.jpg" alt="">
                 </a>
               </div>
-              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae officiis deleniti
                   reprehenderit libero laudantium at minima veniam placeat neque aliquam accusantium
+                  nulla inventore, facilis, modi quam expedita! At, quos nihil?Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Quae officiis deleniti
+                  reprehenderit libero laudantium at minima veniam placeat neque aliquam accusantium
+                  nulla inventore, facilis, modi quam expedita! At, quos nihil? aliquam accusantium
                   nulla inventore, facilis, modi quam expedita! At, quos nihil?</p>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="#" class="btn btn-lg btn-default pull-right news-item-btn">Подробнее</a>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 news-item-btnblock">
+                  <a href="#" class="btn btn-lg btn-default pull-right news-item-btn">Подробней</a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="clearfix news-item">
-              <div
-                class="col-lg-12 col-lg-push-0 col-md-12 col-md-push-0 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a href="#">
-                  <h4 class="news-item-heading">Крис Прэтт и Дженифер Лоуренс представили "Пассажиров" в Париже</h4>
+                  <h4 class="news-item-heading">Крис Прэтт и Дженнифер Лоуренс представили "Пассажиров" в Париже</h4>
                 </a>
               </div>
-              <div class="col-lg-4 col-lg-push-0 col-md-4 col-md-push-0 col-sm-4 col-sm-push-0 col-xs-8 col-xs-push-2">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 news-item-imgblock">
                 <a href="#">
                   <img class="img-thumbnail news-item-img" src="assets/img/news/news-3.jpg" alt="">
                 </a>
               </div>
-              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae officiis deleniti
                   reprehenderit libero laudantium at minima veniam placeat neque aliquam accusantium
-                  nulla inventore, facilis, modi quam expedita! At, quos nihil?</p>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="#" class="btn btn-lg btn-default pull-right news-item-btn">Подробнее</a>
+                  nulla inventore, facilis, modi quam expedita! At, quos nihil?Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Quae officiis deleniti officiis deleniti officiis deleniti</p>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 news-item-btnblock">
+                  <a href="#" class="btn btn-lg btn-default pull-right news-item-btn">Подробней</a>
+                </div>
               </div>
             </div>
           </div>
@@ -507,7 +513,7 @@
           <div class="panel-heading">
             <h3 class="panel-title">Новости сайта</h3>
           </div>
-          <div class="panel-body">
+          <div class="panel-body site-news-newsblock">
 
 
             <div class="media site-news-item">
@@ -659,7 +665,7 @@
       <div class="row footer-container">
         <div class="col-lg-3 col-lg-md-3 col-sm-4 col-xs-6">
           <ul class="footer-list">
-            <li class="footer-list-item disabled"><span>Lorem ipsum dolor sit amet.</span></li>
+            <li class="footer-list-header"><span>Lorem ipsum dolor sit amet.</span></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem, ipsum.</a></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem ipsum dolor sit amet.</a></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem, ipsum.</a></li>
@@ -668,7 +674,7 @@
         </div>
         <div class="col-lg-3 col-lg-md-3 col-sm-4 col-xs-6">
           <ul class="footer-list">
-            <li class="footer-list-item disabled"><span>Lorem ipsum dolor sit amet.</span></li>
+            <li class="footer-list-header"><span>Lorem ipsum dolor sit amet.</span></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem, ipsum.</a></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem ipsum dolor sit amet.</a></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem, ipsum.</a></li>
@@ -678,7 +684,7 @@
         </div>
         <div class="col-lg-3 col-lg-md-3 col-sm-4 col-xs-6">
           <ul class="footer-list">
-            <li class="footer-list-item disabled"><span>Lorem ipsum dolor sit amet.</span></li>
+            <li class="footer-list-header"><span>Lorem ipsum dolor sit amet.</span></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem, ipsum.</a></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem ipsum dolor sit amet.</a></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem, ipsum.</a></li>
@@ -687,7 +693,7 @@
         </div>
         <div class="col-lg-3 col-lg-md-3 col-sm-4 col-xs-6">
           <ul class="footer-list">
-            <li class="footer-list-item disabled"><span>Lorem ipsum dolor sit amet.</span></li>
+            <li class="footer-list-header"><span>Lorem ipsum dolor sit amet.</span></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem, ipsum.</a></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem ipsum dolor sit amet.</a></li>
             <li class="footer-list-item"><a class="footer-list-link" href="">Lorem, ipsum.</a></li>

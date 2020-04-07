@@ -1,39 +1,28 @@
 .footer-list {
     list-style: none;
-    @include md {
-        padding: $gap / 3;
-        margin-bottom: $gap * 2;;
-    }
-    @include sm {
-        padding: 0;
-        margin-bottom: $gap * 2;;
-    }
-    @include xs {
-        padding: 0;
-        margin-bottom: $gap * 2;;
-    }
+    padding: 0px;
+    font-weight: 100;
 
     &-link {
         color: rgba($color-light, 0.5);
+        font-size: 0.91rem;
 
         &:hover {
             color: $color-light;
         }
     }
-
-    &-item {
-        &:first-child span {
-            color: $color-light;
-            margin-bottom: 10px;
-            display: inline-block;
-        }
+    &-header {
+        font-weight: 700;
+        color: $color-light;
+        margin-bottom: 8px;
+        display: inline-block
     }
 }
 
 .footer-fluid {
-    background-color: #191919;
+    background-color: #252525;
 }
 
 .footer-container {
-    padding-top: $gap *4;
+    padding-top: $gap * 3.86;
 }
