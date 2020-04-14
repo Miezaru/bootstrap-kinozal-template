@@ -108,7 +108,7 @@ h2 {
 
 h1::after,
 h2::after {
-  content: "";
+  content: '';
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -126,7 +126,7 @@ h2 {
 }
 
 h2::before {
-  content: "";
+  content: '';
   -webkit-box-flex: 0.066;
       -ms-flex: 0.066;
           flex: 0.066;
@@ -200,8 +200,6 @@ h5 {
 .best-week-img {
   display: block;
   padding-top: 1px;
-  width: 100%;
-  height: auto;
 }
 
 .new-films .thumbnail,
@@ -260,7 +258,7 @@ h5 {
 }
 
 .news-item-heading {
-  font-size: 32px;
+  font-size: 24.096px;
   margin-top: 0px;
 }
 
@@ -488,22 +486,9 @@ h5 {
 }
 
 @media (min-width: 576px) {
-  h1,
-  h2 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h4 {
-    font-size: 2.5rem;
-  }
   .header-logo__title {
     font-size: 3.5rem;
     letter-spacing: 0.33em;
-  }
-  .news-item-heading {
-    font-size: 1.5rem;
   }
 }
 
@@ -544,21 +529,8 @@ h5 {
 }
 
 @media (max-width: 575.8px) {
-  h1,
-  h2 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1.75rem;
-  }
   .header-logo__title {
     font-size: 2.5rem;
     letter-spacing: 0.2em;
-  }
-  .news-item-heading {
-    font-size: 1.4rem;
   }
 }

@@ -1,0 +1,49 @@
+.film-info {
+  &-video {
+    border-radius: ($gap / 2) ($gap / 2) ($gap * 4) 0;
+  }
+
+  &-ratings {
+    padding: $gap * 1.3;
+    font-weight: 100;
+
+    & div {
+      font-size: $gap * 1.25;
+      display: inline-block;
+      margin-left: $gap;
+    }
+
+    & .badge {
+      margin-left: $gap / 3;
+      margin-right: $gap;
+      font-weight: 700;
+      font-size: $font-size / 1.05;
+    }
+  }
+
+  &-descr {
+    padding: 22px;
+    margin-bottom: $gap * 5.2;
+  }
+  &-comments {
+    margin-bottom: $gap * 6;
+  }
+  &-leave {
+    margin-bottom: $gap * 3.13;
+  }
+  &-ratings {
+    margin-bottom: $gap * 5.06;
+  }
+
+  &-comments {
+    &-btn {
+      background-color: rgba($color-accent, 0.75);
+      color: $color-light;
+
+      &:hover {
+        background-color: $color-accent;
+        color: $color-light;
+      }
+    }
+  }
+}
