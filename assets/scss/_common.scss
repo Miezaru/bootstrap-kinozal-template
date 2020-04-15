@@ -79,15 +79,6 @@ hr {
   margin: 0px;
 }
 
-h4 {
-  @include xs-min {
-    font-size: 2.5rem;
-  }
-  @include xs {
-    font-size: 1.75rem;
-  }
-}
-
 h5 {
   font-size: $font-size;
 }

@@ -6,6 +6,16 @@
   margin-bottom: $gap;
 }
 
+.user-login {
+  @include md {
+    margin-bottom: $gap * 4;
+  }
+
+  @include sm-xs {
+    margin-bottom: $gap * 4;
+  }
+}
+
 .new-films,
 .best-week {
   .row {

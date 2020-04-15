@@ -1,13 +1,9 @@
-
-
-
-
 .navbar-inverse {
   background-color: darken($color-dark, 4%);
   border-color: transparent;
 
   .navbar-nav {
-    >.active>a {
+    > .active > a {
       background-color: saturate(darken($color-primary, 14%), 15%);
 
       &:hover,
@@ -16,7 +12,7 @@
       }
     }
 
-    >li>a {
+    > li > a {
       @include sm-min {
         border-radius: 4px;
       }
@@ -76,7 +72,7 @@
   }
 
   &-info {
-    >.panel-heading {
+    > .panel-heading {
       color: $color-light;
       background-color: $color-accent;
       border: none;
@@ -93,12 +89,19 @@
     border: 1px solid $color-gray;
     border-radius: 0 0 4px 4px;
   }
+
+  @include md {
+    margin-bottom: $gap * 3;
+  }
+
+  @include sm-xs {
+    margin-bottom: $gap * 3;
+  }
 }
 
 .input {
-
   &-lg,
-  &-group-lg>.form-control {
+  &-group-lg > .form-control {
     font-size: 0.875rem;
   }
 }
@@ -113,4 +116,3 @@
   overflow: hidden;
   line-height: 22px;
 }
-
