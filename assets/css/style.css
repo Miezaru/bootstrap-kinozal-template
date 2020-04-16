@@ -19,6 +19,10 @@
   background-color: #165690;
 }
 
+.navbar-inverse {
+  margin-bottom: 0;
+}
+
 .navbar-header {
   text-align: center;
 }
@@ -35,7 +39,7 @@
 }
 
 .panel-heading {
-  padding: 11px 15px;
+  padding: 10px 15px;
 }
 
 .panel-info > .panel-heading {
@@ -152,7 +156,7 @@ h5 {
 }
 
 .header {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .header-logo {
@@ -518,7 +522,7 @@ h5 {
 
 @media (max-width: 991.8px) {
   .panel {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
   .user-login {
     margin-bottom: 60px;

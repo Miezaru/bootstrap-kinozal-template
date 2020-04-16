@@ -28,7 +28,9 @@
     }
   }
 }
-
+.navbar-inverse {
+  margin-bottom: 0;
+}
 .navbar-header {
   text-align: center;
 }
@@ -68,7 +70,7 @@
   margin-bottom: $gap * 1.933;
 
   &-heading {
-    padding: 11px $gap;
+    padding: 10px $gap;
   }
 
   &-info {
@@ -91,7 +93,7 @@
   }
 
   @include md {
-    margin-bottom: $gap * 3;
+    margin-bottom: $gap * 2;
   }
 
   @include sm-xs {
