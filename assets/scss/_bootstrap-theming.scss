@@ -91,14 +91,6 @@
     border: 1px solid $color-gray;
     border-radius: 0 0 4px 4px;
   }
-
-  @include md {
-    margin-bottom: $gap * 2;
-  }
-
-  @include sm-xs {
-    margin-bottom: $gap * 3;
-  }
 }
 
 .input {

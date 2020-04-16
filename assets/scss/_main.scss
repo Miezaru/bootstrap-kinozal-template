@@ -15,6 +15,15 @@
     margin-bottom: $gap * 4;
   }
 }
+.site-search {
+  @include md {
+    margin: (-$gap) 0px ($gap * 2);
+  }
+
+  @include sm-xs {
+    margin-bottom: ($gap * 3);
+  }
+}
 
 .new-films,
 .best-week {

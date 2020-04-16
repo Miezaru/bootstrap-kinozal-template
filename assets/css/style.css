@@ -521,11 +521,11 @@ h5 {
 }
 
 @media (max-width: 991.8px) {
-  .panel {
-    margin-bottom: 30px;
-  }
   .user-login {
     margin-bottom: 60px;
+  }
+  .site-search {
+    margin: -15px 0px 30px;
   }
 }
 
@@ -542,11 +542,11 @@ h5 {
 }
 
 @media (max-width: 767.8px) and (min-width: 576px) {
-  .panel {
-    margin-bottom: 45px;
-  }
   .user-login {
     margin-bottom: 60px;
+  }
+  .site-search {
+    margin-bottom: 45px;
   }
 }
 
