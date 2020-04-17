@@ -19,9 +19,11 @@
   @include md {
     margin: (-$gap) 0px ($gap * 2);
   }
-
-  @include sm-xs {
-    margin: (-$gap) 0px ($gap * 3);
+  @include sm {
+    margin-bottom: $gap * 3;
+  }
+  @include xs {
+    margin: (-$gap) 0px ($gap * 2);
   }
 }
 
