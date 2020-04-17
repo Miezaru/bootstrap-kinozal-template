@@ -19,10 +19,6 @@
   @include md {
     margin: (-$gap) 0px ($gap * 3);
   }
-
-  @include sm-xs {
-    margin-bottom: ($gap * 3);
-  }
 }
 
 .new-films,
