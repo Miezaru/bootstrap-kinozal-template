@@ -545,6 +545,9 @@ h5 {
   .user-login {
     margin-bottom: 60px;
   }
+  .site-search {
+    margin: -15px 0px 45px;
+  }
 }
 
 @media (max-width: 575.8px) {
