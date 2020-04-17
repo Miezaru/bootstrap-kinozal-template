@@ -17,11 +17,11 @@
 }
 .site-search {
   @include md {
-    margin: (-$gap) 0px ($gap * 3);
+    margin: (-$gap) 0px ($gap * 2);
   }
 
   @include sm-xs {
-    margin: (-$gap) 0px ($gap * 2);
+    margin: (-$gap) 0px ($gap * 3);
   }
 }
 
