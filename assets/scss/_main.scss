@@ -53,6 +53,7 @@
 
   &-hover:hover,
   &-hover:hover > &-link > div > h3 {
+    transition: 0.25s;
     color: $color-light;
     background-color: $color-accent;
   }

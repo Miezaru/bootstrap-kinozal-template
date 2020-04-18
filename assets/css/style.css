@@ -257,6 +257,9 @@ h5 {
 .best-week-link > div > h3,
 .best-week-hover:hover >
 .best-week-link > div > h3 {
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
   color: #ffffff;
   background-color: #df8a13;
 }
