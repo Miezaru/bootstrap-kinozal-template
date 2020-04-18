@@ -103,8 +103,14 @@ h2 {
   position: relative;
 }
 
-h1::after,
-h2::after {
+h1 {
+  font-size: 3rem;
+  margin-top: 0px;
+  line-height: 0.8;
+  margin-bottom: 51.9px;
+}
+
+h1::after {
   content: "";
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -112,14 +118,7 @@ h2::after {
   padding-left: 5px;
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
   margin-left: 15px;
-  margin-bottom: 6px;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-top: 0px;
-  line-height: 0.8;
-  margin-bottom: 51.9px;
+  margin-bottom: 0.3px;
 }
 
 h2 {
@@ -135,6 +134,17 @@ h2::before {
   margin: 0 15px 0.8em 0;
   content: "";
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+h2::after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 5px;
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  margin-left: 15px;
+  margin-bottom: 6px;
 }
 
 h3 {
