@@ -1,5 +1,5 @@
 .left-sidebar {
-  margin-bottom: $gap * 4;
+  margin-bottom: $gap * 5.33;
 
   .panel:last-of-type {
     margin-bottom: 0;
@@ -14,9 +14,6 @@
     width: 100%;
   }
 }
-
-
-
 
 .site-news {
   &-newsblock {
@@ -42,10 +39,9 @@
     }
   }
 
-  &:hover>.site-news-img {
+  &:hover > .site-news-img {
     background-color: $color-accent;
   }
-
 
   &-img {
     width: 75px;
@@ -54,17 +50,11 @@
 
   &-date {
     font-weight: 400;
-    font-size: $font-size / 1.2;
+    font-size: 1rem / 1.2;
     color: rgba($color-dark, 0.4);
     padding: 10px 0 0;
   }
 }
-
-
-
-
-
-
 
 .top-films {
   &-body {

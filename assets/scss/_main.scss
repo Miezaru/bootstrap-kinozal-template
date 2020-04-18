@@ -3,27 +3,12 @@
 }
 
 .main {
-  margin-bottom: $gap;
-}
-
-.user-login {
-  @include md {
+  margin-bottom: $gap * 5.33;
+  .site-search {
+    margin: -$gap 0 $gap * 3;
+  }
+  .user-login {
     margin-bottom: $gap * 4;
-  }
-
-  @include sm-xs {
-    margin-bottom: $gap * 4;
-  }
-}
-.site-search {
-  @include md {
-    margin: (-$gap) 0px ($gap * 2);
-  }
-  @include sm {
-    margin-bottom: $gap * 3;
-  }
-  @include xs {
-    margin: (-$gap) 0px ($gap * 2);
   }
 }
 
@@ -71,28 +56,10 @@
   }
 }
 
-.best-week {
-  &-hover:hover {
-    padding: 0px;
-    padding-bottom: 4px;
-  }
-
-  &-hover:hover > &-link {
-    border: 4px solid $color-accent;
-    border-bottom: 0px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-color: $color-accent;
-    border-top-color: $color-light;
-  }
-}
-
-// Вернуться к этому
-
 .news-item {
   margin-bottom: $gap * 3.26;
   &-heading {
-    font-size: $font-size * 2;
+    font-size: 2rem;
     margin-top: 0px;
     @include xs-min {
       font-size: 1.5rem;
@@ -107,10 +74,6 @@
   &-img {
     width: 100%;
     height: auto;
-
-    &:hover {
-      background-color: $color-accent;
-    }
   }
 
   &-btnblock {
@@ -121,10 +84,23 @@
     color: $color-light;
     padding: ($gap / 2.1) ($gap / 1.3);
     font-size: 0.9rem;
+  }
 
-    &:hover {
+  &:hover {
+    .news-item-img,
+    .news-item-btn,
+    .news-item-heading {
+      transition: color 0.25s;
+    }
+    .news-item-img {
+      background-color: rgba($color-accent, 0.75);
+    }
+    .news-item-btn {
       background-color: $color-accent;
       color: $color-light;
+    }
+    .news-item-heading {
+      color: $color-accent;
     }
   }
 }
