@@ -152,7 +152,6 @@ h2::after {
 }
 
 h3 {
-  margin: 0;
   font-size: 16px;
 }
 
@@ -245,6 +244,7 @@ h5 {
 
 .new-films-descr,
 .best-week-descr {
+  margin: 0;
   font-weight: 700;
   padding: 8px;
   white-space: nowrap;
