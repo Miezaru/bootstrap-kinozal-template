@@ -3,6 +3,7 @@
 }
 
 .navbar-inverse {
+  margin-bottom: 0;
   background-color: #191919;
   border-color: transparent;
 }
@@ -49,7 +50,6 @@
 }
 
 .panel-title {
-  font-weight: 400;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
 }
@@ -74,6 +74,17 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 22px;
+}
+
+.well {
+  border-color: #dddddd;
+  background-color: #f1f1f1;
+}
+
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
 }
 
 html {
@@ -106,8 +117,7 @@ h2 {
 h1 {
   font-size: 3rem;
   margin-top: 0px;
-  line-height: 0.8;
-  margin-bottom: 51.9px;
+  margin: -7.5px 0 45px;
 }
 
 h1::after {
@@ -118,7 +128,7 @@ h1::after {
   padding-left: 5px;
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
   margin-left: 15px;
-  margin-bottom: 0.3px;
+  margin-bottom: 5px;
 }
 
 h2 {
@@ -542,6 +552,12 @@ h5 {
   }
 }
 
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .panel-heading {
+    border-radius: 4px 4px 0 0px;
+  }
+}
+
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
@@ -551,6 +567,12 @@ h5 {
   }
   .navbar-right {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .panel-heading {
+    border-radius: 4px 4px 0 0px;
   }
 }
 
