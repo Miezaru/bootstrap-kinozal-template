@@ -2,4 +2,12 @@
 .idea/
 .DS_Store
 node_modules/
+samples/
+.bashrc
+.eslintignore
+.eslintrc
+.jshintrc
+.yarnrc
+gulpfile.js
+package-lock.json
 yarn.lock
